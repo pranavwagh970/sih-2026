@@ -17,6 +17,7 @@ from pipeline import (
     DomainClassifier,
     DuplicateDetector,
     PartnerMatcher,
+    SeverityScorer,
     load_problems,
     load_universities,
     load_industry,
@@ -47,6 +48,8 @@ def get_domain_classifier():
         clf.train(problems["description"], problems["primary_domain"])
     return clf
 
+
+severity_scorer = SeverityScorer()
 
 @st.cache_resource
 def get_duplicate_detector():
@@ -177,7 +180,39 @@ with tab1:
                 scores_df["Score"] = (scores_df["Score"] * 100).round(1)
                 st.bar_chart(scores_df.set_index("Category"))
 
-            st.caption(f"Matches against these original problem domains: {', '.join(expanded_domains)}")
+            
+            # --- Stage 1b: Severity scoring ---
+            st.markdown("**Predicted Severity**")
+            severity, severity_score, matched_signals = severity_scorer.score(complaint_text)
+
+            severity_col, severity_explain_col = st.columns([1, 2])
+            with severity_col:
+                severity_icons = {"Low": "🟢", "Medium": "🟡", "High": "🟠", "Critical": "🔴"}
+                st.metric(
+                    "Severity",
+                    f"{severity_icons.get(severity, '')} {severity}",
+                    f"score: {severity_score}",
+                )
+                if severity == "Critical":
+                    st.warning(
+                        "Flagged Critical by rule-based scoring — recommend a human "
+                        "officer confirms before prioritizing or escalating."
+                    )
+            with severity_explain_col:
+                if matched_signals:
+                    signal_labels = {
+                        "life_safety_risk": "⚠️ Life/safety risk",
+                        "explicit_urgency": "🚨 Explicit urgency language",
+                        "vulnerable_group": "🧑‍🤝‍🧑 Vulnerable group mentioned",
+                        "scale_of_impact": "📢 Wide scale of impact",
+                        "persistence": "⏳ Long-running issue",
+                    }
+                    for signal_name, keyword in matched_signals:
+                        st.caption(f"{signal_labels.get(signal_name, signal_name)} — matched \"{keyword}\"")
+                else:
+                    st.caption("No urgency signals detected — scored as baseline Low severity.")
+
+     
 
             # --- Stage 2: Duplicate detection ---
             # Gated by the classified domain(s) - comparing across domains
@@ -248,6 +283,15 @@ with tab2:
 
     st.subheader("Problems by domain")
     st.bar_chart(problems_df["primary_domain"].value_counts())
+    
+    st.subheader("Problems by urgency (raw dataset label)")
+    st.caption(
+        "This is the dataset's original `urgency` field, not the new rule-based "
+        "Severity Scorer's output — see the About the Models tab for why they differ."
+    )
+    severity_order = ["Low", "Medium", "High", "Critical"]
+    severity_counts = problems_df["urgency"].value_counts().reindex(severity_order).fillna(0)
+    st.bar_chart(severity_counts)
 
     st.subheader("Problems by district")
     st.bar_chart(problems_df["district"].value_counts())
@@ -282,6 +326,31 @@ with tab3:
           the merged (imbalanced) taxonomy its accuracy collapsed to 37%, because it
           defaulted to predicting the largest class. Logistic Regression with balanced
           class weights avoided this entirely.
+        """
+    )
+
+    st.subheader("Severity Scorer")
+    st.markdown(
+        """
+        - **Input:** raw complaint text
+        - **Output:** one of 4 severity levels (Low / Medium / High / Critical),
+          a raw signal score, and the specific keyword(s) that fired
+        - **Method:** rule-based keyword scoring across 5 signal categories —
+          life/safety risk, explicit urgency language, vulnerable groups
+          mentioned, scale of impact, and how long the issue has persisted —
+          each with its own weight, summed into a score that's mapped to a
+          severity band.
+        - **Why not ML here:** we checked first. A Logistic Regression trained
+          on the dataset's existing `urgency` labels scored **~25% 5-fold CV
+          accuracy — chance level for 4 classes.** Cross-checking `urgency`
+          against description text, text length, district, citizen role, and
+          domain all showed effectively zero correlation, meaning the label
+          was assigned independently of the record when the synthetic data was
+          generated — not something any text model could learn. Rules are the
+          honest choice here: same reasoning as the Partner Matcher below, and
+          the transparent output (you can see exactly which words triggered a
+          score) is arguably *more* useful for a civic-complaint triage tool
+          than an opaque confidence number would have been.
         """
     )
 
