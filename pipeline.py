@@ -1,5 +1,5 @@
 """
-Core pipeline logic for the SIH 26043 Quadruple Helix platform.
+Core pipeline logic for the SIH 26043 jansetu platform.
 
 Three stages, each independently testable:
   1. DomainClassifier   - text -> domain category (+ confidence)

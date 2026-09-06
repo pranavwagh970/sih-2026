@@ -1,5 +1,5 @@
 """
-SIH 26043 — Quadruple Helix Innovation Platform (Demo)
+SIH 26043 — jansetu (Demo)
 Citizen -> Academia -> Industry -> Government
 
 Streamlit demo: paste a citizen complaint, and the app will:
@@ -25,7 +25,7 @@ from pipeline import (
 )
 
 st.set_page_config(
-    page_title="Quadruple Helix Innovation Platform — SIH 26043",
+    page_title="jansetu",
     page_icon="🏛️",
     layout="wide",
 )
@@ -79,7 +79,7 @@ districts = get_districts(universities, industry_orgs)
 # ---------------------------------------------------------------------------
 
 with st.sidebar:
-    st.title("🏛️ Quadruple Helix")
+    st.title("🏛️ jansetu")
     st.caption("SIH 2026 — Problem Statement 26043")
     st.markdown(
         """
