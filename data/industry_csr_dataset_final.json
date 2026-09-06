@@ -1,0 +1,566 @@
+[
+  {
+    "company_id": "IND001",
+    "company_name": "Tata Steel Rural Development Society",
+    "district": "East Singhbhum",
+    "state": "Jharkhand",
+    "domains": [
+      "water_management",
+      "rural_livelihoods",
+      "urban_infrastructure"
+    ],
+    "expertise_tags": [
+      "IoT sensors",
+      "rural water supply",
+      "solar microgrids"
+    ],
+    "funding_capacity": 5000000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "IoT Lab",
+      "Water Testing Lab"
+    ],
+    "active_projects": 3,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND002",
+    "company_name": "SAIL Bokaro CSR Cell",
+    "district": "Bokaro",
+    "state": "Jharkhand",
+    "domains": [
+      "environment",
+      "healthcare",
+      "energy"
+    ],
+    "expertise_tags": [
+      "effluent treatment",
+      "occupational health",
+      "fly-ash utilization"
+    ],
+    "funding_capacity": 3500000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Effluent Testing Lab"
+    ],
+    "active_projects": 1,
+    "max_projects": 5,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND003",
+    "company_name": "Usha Martin CSR",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "education",
+      "rural_livelihoods",
+      "accessibility"
+    ],
+    "expertise_tags": [
+      "skill development",
+      "disability inclusion",
+      "SHG financing"
+    ],
+    "funding_capacity": 2000000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Skill Training Center"
+    ],
+    "active_projects": 3,
+    "max_projects": 9,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND004",
+    "company_name": "Adityapur Auto Cluster",
+    "district": "East Singhbhum",
+    "state": "Jharkhand",
+    "domains": [
+      "urban_infrastructure",
+      "energy"
+    ],
+    "expertise_tags": [
+      "automotive ancillary",
+      "IoT sensors",
+      "power systems"
+    ],
+    "funding_capacity": 1200000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Prototyping Workshop"
+    ],
+    "active_projects": 1,
+    "max_projects": 4,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND005",
+    "company_name": "Central Coalfields Limited (CCL) CSR",
+    "district": "Ramgarh",
+    "state": "Jharkhand",
+    "domains": [
+      "environment",
+      "healthcare",
+      "sanitation"
+    ],
+    "expertise_tags": [
+      "mine reclamation",
+      "occupational health",
+      "waste management"
+    ],
+    "funding_capacity": 4000000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Mine Water Testing Lab"
+    ],
+    "active_projects": 2,
+    "max_projects": 5,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND006",
+    "company_name": "Bharat Coking Coal Limited (BCCL) CSR",
+    "district": "Dhanbad",
+    "state": "Jharkhand",
+    "domains": [
+      "environment",
+      "water_management"
+    ],
+    "expertise_tags": [
+      "air quality monitoring",
+      "mine water treatment"
+    ],
+    "funding_capacity": 3200000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Air Quality Monitoring Station"
+    ],
+    "active_projects": 0,
+    "max_projects": 8,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND007",
+    "company_name": "PRADAN Jharkhand",
+    "district": "Palamu",
+    "state": "Jharkhand",
+    "domains": [
+      "agriculture",
+      "rural_livelihoods"
+    ],
+    "expertise_tags": [
+      "farmer producer organizations",
+      "drought-resistant farming",
+      "SHG livelihoods"
+    ],
+    "funding_capacity": 1800000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Agri Demo Farm"
+    ],
+    "active_projects": 3,
+    "max_projects": 9,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND008",
+    "company_name": "Jharkhand State Livelihood Promotion Society (JSLPS)",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "rural_livelihoods",
+      "public_administration"
+    ],
+    "expertise_tags": [
+      "SHG federation support",
+      "livelihood mission",
+      "governance training"
+    ],
+    "funding_capacity": 2500000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Livelihood Resource Center"
+    ],
+    "active_projects": 1,
+    "max_projects": 8,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND009",
+    "company_name": "Jharkhand Renewable Energy Development Agency (JREDA)",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "energy"
+    ],
+    "expertise_tags": [
+      "solar microgrids",
+      "rural electrification",
+      "energy audits"
+    ],
+    "funding_capacity": 3000000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Solar Assembly Unit"
+    ],
+    "active_projects": 0,
+    "max_projects": 4,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND010",
+    "company_name": "Tata Power",
+    "district": "East Singhbhum",
+    "state": "Jharkhand",
+    "domains": [
+      "energy",
+      "urban_infrastructure"
+    ],
+    "expertise_tags": [
+      "power distribution",
+      "smart grid",
+      "transformer diagnostics"
+    ],
+    "funding_capacity": 4500000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Grid Testing Lab"
+    ],
+    "active_projects": 1,
+    "max_projects": 5,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND011",
+    "company_name": "National Health Mission (NHM) Jharkhand",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "healthcare"
+    ],
+    "expertise_tags": [
+      "telemedicine",
+      "maternal health",
+      "disease surveillance"
+    ],
+    "funding_capacity": 2800000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Mobile Health Unit"
+    ],
+    "active_projects": 0,
+    "max_projects": 10,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND012",
+    "company_name": "UNICEF Jharkhand",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "healthcare",
+      "education"
+    ],
+    "expertise_tags": [
+      "immunization outreach",
+      "nutrition programs",
+      "child education"
+    ],
+    "funding_capacity": 3500000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Field Coordination Office"
+    ],
+    "active_projects": 2,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND013",
+    "company_name": "Azim Premji Foundation",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "education"
+    ],
+    "expertise_tags": [
+      "teacher training",
+      "curriculum design",
+      "dropout prevention"
+    ],
+    "funding_capacity": 2200000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Teacher Training Center"
+    ],
+    "active_projects": 1,
+    "max_projects": 8,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND014",
+    "company_name": "JUIDCO (Jharkhand Urban Infra Dev Corp)",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "urban_infrastructure",
+      "sanitation"
+    ],
+    "expertise_tags": [
+      "solid waste management",
+      "drainage systems",
+      "smart city planning"
+    ],
+    "funding_capacity": 4000000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Urban Planning Cell"
+    ],
+    "active_projects": 2,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND015",
+    "company_name": "Ranchi Municipal Corporation CSR Partners",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "sanitation",
+      "urban_infrastructure"
+    ],
+    "expertise_tags": [
+      "waste segregation",
+      "road infrastructure"
+    ],
+    "funding_capacity": 1500000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Municipal Workshop"
+    ],
+    "active_projects": 0,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND016",
+    "company_name": "NMDC Chaibasa CSR",
+    "district": "West Singhbhum",
+    "state": "Jharkhand",
+    "domains": [
+      "environment",
+      "water_management"
+    ],
+    "expertise_tags": [
+      "iron-ore tailings management",
+      "watershed restoration"
+    ],
+    "funding_capacity": 2600000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Tailings Management Facility"
+    ],
+    "active_projects": 2,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND017",
+    "company_name": "Santhal Pargana Forest Division Partners",
+    "district": "Dumka",
+    "state": "Jharkhand",
+    "domains": [
+      "environment"
+    ],
+    "expertise_tags": [
+      "forest conservation",
+      "biodiversity monitoring"
+    ],
+    "funding_capacity": 900000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Forest Field Station"
+    ],
+    "active_projects": 0,
+    "max_projects": 9,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND018",
+    "company_name": "CBM India Trust",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "accessibility",
+      "healthcare"
+    ],
+    "expertise_tags": [
+      "assistive technology",
+      "accessible infrastructure audits"
+    ],
+    "funding_capacity": 1100000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Assistive Tech Demo Center"
+    ],
+    "active_projects": 2,
+    "max_projects": 10,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND019",
+    "company_name": "JSAC (Jharkhand Space Applications Centre)",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "environment",
+      "agriculture"
+    ],
+    "expertise_tags": [
+      "remote sensing",
+      "satellite crop monitoring",
+      "watershed mapping"
+    ],
+    "funding_capacity": 2000000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "GIS & Remote Sensing Lab"
+    ],
+    "active_projects": 2,
+    "max_projects": 4,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND020",
+    "company_name": "Deepshikha Special Needs NGO",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "domains": [
+      "accessibility",
+      "education"
+    ],
+    "expertise_tags": [
+      "disability inclusion",
+      "special education"
+    ],
+    "funding_capacity": 700000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Inclusive Education Resource Room"
+    ],
+    "active_projects": 0,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND021",
+    "company_name": "Jharkhand State Information Commission Partners",
+    "district": "Hazaribagh",
+    "state": "Jharkhand",
+    "domains": [
+      "public_administration"
+    ],
+    "expertise_tags": [
+      "e-governance",
+      "RTI implementation",
+      "grievance redressal"
+    ],
+    "funding_capacity": 1000000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Digital Governance Cell"
+    ],
+    "active_projects": 2,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND022",
+    "company_name": "DVC (Damodar Valley Corporation) CSR",
+    "district": "Bokaro",
+    "state": "Jharkhand",
+    "domains": [
+      "energy",
+      "water_management"
+    ],
+    "expertise_tags": [
+      "hydro power",
+      "reservoir water management"
+    ],
+    "funding_capacity": 3800000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Reservoir Monitoring Station"
+    ],
+    "active_projects": 0,
+    "max_projects": 10,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND023",
+    "company_name": "PACS Reform & Agri Marketing Trust",
+    "district": "Palamu",
+    "state": "Jharkhand",
+    "domains": [
+      "agriculture",
+      "public_administration"
+    ],
+    "expertise_tags": [
+      "PACS reform",
+      "fair-price agri marketing"
+    ],
+    "funding_capacity": 1300000,
+    "mentorship_available": false,
+    "lab_resources": [
+      "Agri Marketing Cell"
+    ],
+    "active_projects": 0,
+    "max_projects": 5,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND024",
+    "company_name": "Jharkhand Rural Works Department Partners",
+    "district": "Palamu",
+    "state": "Jharkhand",
+    "domains": [
+      "urban_infrastructure"
+    ],
+    "expertise_tags": [
+      "rural road engineering",
+      "bridge maintenance"
+    ],
+    "funding_capacity": 1600000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Rural Works Testing Lab"
+    ],
+    "active_projects": 0,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  },
+  {
+    "company_id": "IND025",
+    "company_name": "Veterinary & Animal Husbandry Support Trust",
+    "district": "Hazaribagh",
+    "state": "Jharkhand",
+    "domains": [
+      "agriculture",
+      "healthcare"
+    ],
+    "expertise_tags": [
+      "veterinary services",
+      "livestock health"
+    ],
+    "funding_capacity": 900000,
+    "mentorship_available": true,
+    "lab_resources": [
+      "Mobile Veterinary Unit"
+    ],
+    "active_projects": 3,
+    "max_projects": 7,
+    "data_status": "synthetic_demo_catalog"
+  }
+]

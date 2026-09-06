@@ -1,0 +1,632 @@
+[
+  {
+    "id": "u1",
+    "name": "Birla Institute of Technology, Mesra",
+    "department": "Civil Engineering",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.4123,
+      "lng": 85.4399
+    },
+    "domains": [
+      "water_management",
+      "urban_infrastructure",
+      "sanitation"
+    ],
+    "expertise_tags": [
+      "rural water supply",
+      "groundwater recharge",
+      "watershed management",
+      "low-cost sanitation systems",
+      "drainage design"
+    ],
+    "faculty_lead": "Dr. Anand Kumar (Prof. & Head)",
+    "faculty_research": "Faculty working on decentralized water treatment and handpump sustainability models for rural Jharkhand.",
+    "active_projects": 2,
+    "max_capacity": 6,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "Tata Steel Rural Development Society",
+      "JUIDCO"
+    ],
+    "institution_id": "INST-BIRLAINSTI",
+    "department_id": "DEPT-U1",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.333,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u2",
+    "name": "National Institute of Technology, Jamshedpur",
+    "department": "Computer Science & Engineering",
+    "district": "East Singhbhum",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 22.777,
+      "lng": 86.1441
+    },
+    "domains": [
+      "agriculture",
+      "energy"
+    ],
+    "expertise_tags": [
+      "IoT sensors",
+      "precision farming",
+      "smart grid",
+      "remote sensing",
+      "soil moisture monitoring"
+    ],
+    "faculty_lead": "Dr. D. K. Yadav (Associate Prof.)",
+    "faculty_research": "Research on soil-sensor networks and crop yield prediction using satellite data.",
+    "active_projects": 4,
+    "max_capacity": 8,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "Jusco (Tata Steel Utilities)",
+      "Adityapur Auto Cluster"
+    ],
+    "institution_id": "INST-NATIONALIN",
+    "department_id": "DEPT-U2",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.5,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u3",
+    "name": "Ranchi University",
+    "department": "Department of Education",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.37,
+      "lng": 85.325
+    },
+    "domains": [
+      "education"
+    ],
+    "expertise_tags": [
+      "rural education access",
+      "teacher training",
+      "learning outcomes",
+      "curriculum design"
+    ],
+    "faculty_lead": "Prof. S. N. Munda (Director)",
+    "faculty_research": "Studies on dropout prevention and multi-grade teaching models for tribal-belt schools.",
+    "active_projects": 1,
+    "max_capacity": 5,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "Azim Premji Foundation",
+      "Jharkhand Education Project Council"
+    ],
+    "institution_id": "INST-RANCHIUNIV",
+    "department_id": "DEPT-U3",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.2,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u4",
+    "name": "Rajendra Institute of Medical Sciences (RIMS), Ranchi",
+    "department": "Community & Public Health Medicine",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.3734,
+      "lng": 85.3587
+    },
+    "domains": [
+      "healthcare"
+    ],
+    "expertise_tags": [
+      "rural health delivery",
+      "maternal health",
+      "telemedicine",
+      "disease surveillance"
+    ],
+    "faculty_lead": "Dr. Vivek Kashyap (Prof. PSM)",
+    "faculty_research": "Active projects on telemedicine outreach and last-mile immunization coverage in tribal districts.",
+    "active_projects": 5,
+    "max_capacity": 7,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "National Health Mission (NHM) Jharkhand",
+      "UNICEF Jharkhand"
+    ],
+    "institution_id": "INST-RAJENDRAIN",
+    "department_id": "DEPT-U4",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.714,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u5",
+    "name": "Birsa Agricultural University, Ranchi",
+    "department": "Agricultural Sciences",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.4442,
+      "lng": 85.3188
+    },
+    "domains": [
+      "agriculture",
+      "rural_livelihoods"
+    ],
+    "expertise_tags": [
+      "crop pest management",
+      "soil health",
+      "post-harvest storage",
+      "farmer producer organizations"
+    ],
+    "faculty_lead": "Dr. P. K. Singh (Senior Scientist)",
+    "faculty_research": "Research on pest-resistant crop varieties and cold-chain solutions for smallholder farmers.",
+    "active_projects": 3,
+    "max_capacity": 8,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "PRADAN",
+      "Jharkhand State Livelihood Promotion Society (JSLPS)"
+    ],
+    "institution_id": "INST-BIRSAAGRIC",
+    "department_id": "DEPT-U5",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.375,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u6",
+    "name": "Indian Institute of Technology (ISM), Dhanbad",
+    "department": "Environmental Science & Engineering",
+    "district": "Dhanbad",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.8144,
+      "lng": 86.4412
+    },
+    "domains": [
+      "environment",
+      "energy"
+    ],
+    "expertise_tags": [
+      "mine reclamation",
+      "air quality monitoring",
+      "renewable energy",
+      "industrial effluent treatment"
+    ],
+    "faculty_lead": "Prof. Gurdeep Singh (Chair Prof.)",
+    "faculty_research": "Work on coal-belt air pollution modeling and mine-land rehabilitation techniques.",
+    "active_projects": 4,
+    "max_capacity": 9,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "Bharat Coking Coal Limited (BCCL)",
+      "Central Coalfields Limited (CCL)"
+    ],
+    "institution_id": "INST-INDIANINST",
+    "department_id": "DEPT-U6",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.444,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u7",
+    "name": "Xavier Institute of Social Service (XISS), Ranchi",
+    "department": "Rural Development & Social Work",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.3644,
+      "lng": 85.3214
+    },
+    "domains": [
+      "rural_livelihoods",
+      "public_administration",
+      "accessibility"
+    ],
+    "expertise_tags": [
+      "self-help groups",
+      "livelihood mission",
+      "disability inclusion",
+      "governance training"
+    ],
+    "faculty_lead": "Dr. Anant Kumar (Head, Rural Dev)",
+    "faculty_research": "Programs on tribal livelihood promotion and inclusive design for disability access in public offices.",
+    "active_projects": 3,
+    "max_capacity": 6,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "Usha Martin CSR",
+      "JSLPS (Palash Brand)"
+    ],
+    "institution_id": "INST-XAVIERINST",
+    "department_id": "DEPT-U7",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.5,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u8",
+    "name": "Sido Kanhu Murmu University, Dumka",
+    "department": "Environmental Studies",
+    "district": "Dumka",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 24.2818,
+      "lng": 87.2519
+    },
+    "domains": [
+      "environment",
+      "water_management"
+    ],
+    "expertise_tags": [
+      "forest conservation",
+      "watershed restoration",
+      "tribal ecology",
+      "biodiversity"
+    ],
+    "faculty_lead": "Dr. Sanjay Kumar Sinha (Associate Prof.)",
+    "faculty_research": "Research on Santhal Pargana forest cover change and community-led watershed restoration.",
+    "active_projects": 2,
+    "max_capacity": 5,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "Santhal Pargana Forest Division",
+      "JSAC (Space Applications)"
+    ],
+    "institution_id": "INST-SIDOKANHUM",
+    "department_id": "DEPT-U8",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.4,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u9",
+    "name": "Jharkhand University of Technology, Ranchi",
+    "department": "Urban & Regional Planning",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.3167,
+      "lng": 85.3789
+    },
+    "domains": [
+      "urban_infrastructure",
+      "sanitation"
+    ],
+    "expertise_tags": [
+      "road infrastructure",
+      "solid waste management",
+      "smart city planning",
+      "drainage systems"
+    ],
+    "faculty_lead": "Dr. B. R. Mahto (Dept. Lead)",
+    "faculty_research": "Projects on municipal solid waste management models for tier-2 towns in Jharkhand.",
+    "active_projects": 2,
+    "max_capacity": 6,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "Ranchi Municipal Corporation",
+      "Jharkhand Urban Infrastructure Dev Corp"
+    ],
+    "institution_id": "INST-JHARKHANDU",
+    "department_id": "DEPT-U9",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.333,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u10",
+    "name": "Vinoba Bhave University, Hazaribagh",
+    "department": "Public Administration",
+    "district": "Hazaribagh",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.9925,
+      "lng": 85.3647
+    },
+    "domains": [
+      "public_administration",
+      "education"
+    ],
+    "expertise_tags": [
+      "e-governance",
+      "grievance redressal",
+      "panchayati raj systems",
+      "RTI implementation"
+    ],
+    "faculty_lead": "Dr. M. P. Sharma (Prof.)",
+    "faculty_research": "Studies on digital grievance redressal effectiveness across Jharkhand panchayats.",
+    "active_projects": 1,
+    "max_capacity": 5,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "Jharkhand State Information Commission",
+      "NITI Aayog Aspirational Districts"
+    ],
+    "institution_id": "INST-VINOBABHAV",
+    "department_id": "DEPT-U10",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.2,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u11",
+    "name": "National Institute of Technology, Jamshedpur (Electrical Dept.)",
+    "department": "Electrical Engineering",
+    "district": "East Singhbhum",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 22.777,
+      "lng": 86.1441
+    },
+    "domains": [
+      "energy",
+      "urban_infrastructure"
+    ],
+    "expertise_tags": [
+      "rural electrification",
+      "solar microgrids",
+      "power distribution",
+      "energy audits"
+    ],
+    "faculty_lead": "Dr. Niranjan Kumar (Prof. EE)",
+    "faculty_research": "Work on solar microgrid reliability for unelectrified tribal hamlets.",
+    "active_projects": 3,
+    "max_capacity": 7,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "Jharkhand Renewable Energy Development Agency (JREDA)",
+      "Tata Power"
+    ],
+    "institution_id": "INST-NATIONALIN",
+    "department_id": "DEPT-U11",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.429,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u12",
+    "name": "St. Xavier's College, Ranchi",
+    "department": "Department of Social Work & Disability Studies",
+    "district": "Ranchi",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.3619,
+      "lng": 85.3251
+    },
+    "domains": [
+      "accessibility",
+      "healthcare"
+    ],
+    "expertise_tags": [
+      "disability inclusion",
+      "assistive technology",
+      "accessible infrastructure audits",
+      "community health"
+    ],
+    "faculty_lead": "Fr. Joseph Marianus Kujur SJ (Director)",
+    "faculty_research": "Projects on accessibility audits of public buildings and assistive tech pilots for rural disabled residents.",
+    "active_projects": 2,
+    "max_capacity": 5,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "CBM India Trust",
+      "Deepshikha Special Needs NGO"
+    ],
+    "institution_id": "INST-STXAVIERSC",
+    "department_id": "DEPT-U12",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.4,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u13",
+    "name": "Kolhan University, Chaibasa",
+    "department": "Tribal Studies & Rural Development",
+    "district": "West Singhbhum",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 22.5497,
+      "lng": 85.7996
+    },
+    "domains": [
+      "rural_livelihoods",
+      "accessibility",
+      "public_administration"
+    ],
+    "expertise_tags": [
+      "tribal livelihood systems",
+      "forest-produce based enterprise",
+      "disability inclusion audits",
+      "panchayat capacity building"
+    ],
+    "faculty_lead": "Dr. Ranjit Toppo (Head, Rural Dev)",
+    "faculty_research": "Work on Ho/Munda tribal livelihood diversification and accessible public-service delivery in mining belt blocks.",
+    "active_projects": 1,
+    "max_capacity": 5,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "Tata Steel West Bokaro CSR",
+      "SAIL Chaibasa"
+    ],
+    "institution_id": "INST-KOLHANUNIV",
+    "department_id": "DEPT-U13",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.2,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u14",
+    "name": "Tata College, Chaibasa",
+    "department": "Environmental Science",
+    "district": "West Singhbhum",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 22.5537,
+      "lng": 85.8022
+    },
+    "domains": [
+      "environment",
+      "water_management"
+    ],
+    "expertise_tags": [
+      "mining-belt water quality",
+      "iron-ore tailings management",
+      "watershed monitoring"
+    ],
+    "faculty_lead": "Dr. Meena Purty (Assoc. Prof.)",
+    "faculty_research": "Monitoring surface-water contamination from iron-ore mining operations in West Singhbhum river basins.",
+    "active_projects": 2,
+    "max_capacity": 5,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "SAIL Chaibasa",
+      "NMDC"
+    ],
+    "institution_id": "INST-TATACOLLEG",
+    "department_id": "DEPT-U14",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.4,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u15",
+    "name": "Nilamber Pitamber University, Palamu",
+    "department": "Agricultural Extension & Rural Studies",
+    "district": "Palamu",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 24.0479,
+      "lng": 84.0716
+    },
+    "domains": [
+      "agriculture",
+      "rural_livelihoods",
+      "water_management"
+    ],
+    "expertise_tags": [
+      "drought-resistant farming",
+      "watershed-based irrigation",
+      "farmer producer organizations",
+      "PACS reform"
+    ],
+    "faculty_lead": "Dr. Ashok Bhagat (Prof. & Head)",
+    "faculty_research": "Research on drought mitigation cropping patterns and decentralized irrigation for Palamu's semi-arid blocks.",
+    "active_projects": 2,
+    "max_capacity": 6,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "PRADAN Palamu",
+      "JSLPS Palamu"
+    ],
+    "institution_id": "INST-NILAMBERPI",
+    "department_id": "DEPT-U15",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.333,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u16",
+    "name": "Palamu Government Polytechnic",
+    "department": "Civil & Public Health Engineering",
+    "district": "Palamu",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 24.045,
+      "lng": 84.068
+    },
+    "domains": [
+      "urban_infrastructure",
+      "sanitation",
+      "energy"
+    ],
+    "expertise_tags": [
+      "rural road engineering",
+      "low-cost sanitation",
+      "off-grid solar for schools/clinics"
+    ],
+    "faculty_lead": "Er. Suresh Oraon (Sr. Lecturer)",
+    "faculty_research": "Field pilots on low-cost drainage and solar-powered public facilities in Naxal-affected blocks of Palamu.",
+    "active_projects": 1,
+    "max_capacity": 4,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "Jharkhand Rural Works Dept"
+    ],
+    "institution_id": "INST-PALAMUGOVT",
+    "department_id": "DEPT-U16",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.25,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u17",
+    "name": "B.S. City College, Bokaro",
+    "department": "Public Health & Community Medicine",
+    "district": "Bokaro",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.6693,
+      "lng": 86.1511
+    },
+    "domains": [
+      "healthcare",
+      "education"
+    ],
+    "expertise_tags": [
+      "industrial-belt occupational health",
+      "school health screening",
+      "telemedicine outreach"
+    ],
+    "faculty_lead": "Dr. Rakesh Mahato (Assoc. Prof.)",
+    "faculty_research": "Studies on respiratory health impacts near steel-plant zones and school-based health screening models.",
+    "active_projects": 2,
+    "max_capacity": 5,
+    "incubation_center": false,
+    "industry_collaborators": [
+      "SAIL Bokaro CSR Cell"
+    ],
+    "institution_id": "INST-BSCITYCOL",
+    "department_id": "DEPT-U17",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.4,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  },
+  {
+    "id": "u18",
+    "name": "Bokaro Steel City Engineering College",
+    "department": "Electrical & Energy Systems",
+    "district": "Bokaro",
+    "state": "Jharkhand",
+    "coordinates": {
+      "lat": 23.665,
+      "lng": 86.148
+    },
+    "domains": [
+      "energy",
+      "urban_infrastructure",
+      "environment"
+    ],
+    "expertise_tags": [
+      "industrial power distribution",
+      "transformer diagnostics",
+      "fly-ash utilization"
+    ],
+    "faculty_lead": "Dr. Vinay Kumar Das (Prof. EE)",
+    "faculty_research": "Work on rural feeder reliability and fly-ash based construction material as a mine-waste utilization pathway.",
+    "active_projects": 3,
+    "max_capacity": 6,
+    "incubation_center": true,
+    "industry_collaborators": [
+      "SAIL Bokaro CSR Cell",
+      "DVC Bokaro"
+    ],
+    "institution_id": "INST-BOKAROSTEE",
+    "department_id": "DEPT-U18",
+    "data_status": "synthetic_demo_catalog",
+    "capacity_utilization": 0.5,
+    "routing_notes": "Use domain/expertise similarity first; capacity and distance are tie-breakers."
+  }
+]
