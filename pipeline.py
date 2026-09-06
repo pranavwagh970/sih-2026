@@ -71,6 +71,10 @@ for original in [
 
 DUPLICATE_SIMILARITY_THRESHOLD = 0.3
 
+# Canonical ordering for severity labels - used for sorting/display, not
+# for the model itself (LogisticRegression treats them as unordered classes).
+SEVERITY_ORDER = ["Low", "Medium", "High", "Critical"]
+
 
 # ---------------------------------------------------------------------------
 # Stage 1: Domain classification
@@ -110,6 +114,109 @@ class DomainClassifier:
             self.pipe = pickle.load(f)
         return self
 
+
+
+# ---------------------------------------------------------------------------
+# Stage 1b: Severity scoring
+# ---------------------------------------------------------------------------
+#
+# NOT ML-based, deliberately - same reasoning as the Partner Matcher below.
+# We checked first: the dataset's existing `urgency` label has ~0 measured
+# correlation with the complaint text, text length, district, citizen role,
+# or domain (a Logistic Regression trained on it scored ~25% 5-fold CV
+# accuracy - chance level for 4 classes). That means `urgency` was assigned
+# independently of the record content when the synthetic data was built, so
+# no model - however tuned - could learn to predict it from this text. We
+# diagnosed that before building anything, rather than shipping an ML
+# "severity classifier" that would quietly be a coin flip in the demo.
+#
+# Instead, severity is scored from keyword signals that genuinely indicate
+# urgency in civic complaints: life/safety risk, vulnerable groups affected,
+# scale of impact, and how long the issue has persisted. Each matched signal
+# is returned alongside the score, so the app can show *why* a complaint was
+# scored the way it was - transparent and defensible, like the domain/
+# industry matching rules already are.
+
+SEVERITY_SIGNALS = {
+    "life_safety_risk": {
+        "weight": 3,
+        "keywords": [
+            "accident", "death", "died", "dead", "collapse", "collapsed",
+            "fire", "electrocution", "electrocuted", "landslide", "flood",
+            "flooding", "drown", "drowned", "poison", "poisoning", "toxic",
+            "arsenic", "contaminated", "contamination", "disease", "outbreak",
+            "epidemic", "injury", "injured", "unsafe", "hazard", "hazardous",
+            "collapse ho", "girne ka khatra", "khatra",
+        ],
+    },
+    "explicit_urgency": {
+        "weight": 3,
+        "keywords": [
+            "urgent", "urgently", "immediately", "emergency", "critical",
+            "asap", "life threatening", "life-threatening", "dar hai",
+        ],
+    },
+    "vulnerable_group": {
+        "weight": 2,
+        "keywords": [
+            "children", "child", "students", "student", "girl", "girls",
+            "women", "pregnant", "elderly", "senior citizen", "patients",
+            "disabled", "infant", "newborn",
+        ],
+    },
+    "scale_of_impact": {
+        "weight": 2,
+        "keywords": [
+            "entire village", "whole village", "whole block", "villagers",
+            "thousands", "hundreds", "many families", "entire area",
+            "several villages", "tola", "district", "block me",
+        ],
+    },
+    "persistence": {
+        "weight": 1,
+        "keywords": [
+            "weeks", "months", "years", "long time", "roz", "daily",
+            "everyday", "since many days", "for the past",
+        ],
+    },
+}
+
+# Cumulative point thresholds (inclusive lower bound) mapping score -> label.
+# Tuned so a single strong signal (e.g. explicit_urgency alone) lands in
+# High, and two or more compounding signals reach Critical.
+SEVERITY_SCORE_THRESHOLDS = [
+    (5, "Critical"),
+    (3, "High"),
+    (1, "Medium"),
+    (0, "Low"),
+]
+
+
+class SeverityScorer:
+    """Rule-based severity scorer. Not a trained model - see module notes above
+    for why: the dataset's urgency label isn't learnable from the text."""
+
+    def score(self, text: str):
+        """Returns (severity_label, raw_score, matched_signals).
+
+        matched_signals: list of (signal_name, keyword) tuples that fired,
+        for display/explanation in the UI.
+        """
+        text_lower = text.lower()
+        matched = []
+        total = 0
+        for signal_name, cfg in SEVERITY_SIGNALS.items():
+            for kw in cfg["keywords"]:
+                if kw in text_lower:
+                    matched.append((signal_name, kw))
+                    total += cfg["weight"]
+                    break  # count each signal category at most once per complaint
+        label = "Low"
+        for threshold, name in SEVERITY_SCORE_THRESHOLDS:
+            if total >= threshold:
+                label = name
+                break
+        return label, total, matched
 
 # ---------------------------------------------------------------------------
 # Stage 2: Duplicate detection
